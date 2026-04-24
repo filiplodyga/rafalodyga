@@ -6,20 +6,23 @@
   --font-serif: "Playfair Display", serif;
   --font-display: "Cormorant Garamond", serif;
 
-  --color-wood-dark: #1A1A1A;
-  --color-wood-oak: #C8A97E;
-  --color-wood-walnut: #3D2B1F;
-  --color-wood-cream: #F5F2ED;
-  --color-wood-highlight: #D4AF37; /* Gold touch */
+  --color-primary: #C5A059;
+  --color-background: #0F0D0C;
+  --color-surface: #151210;
+  --color-text: #FDFBF7;
+  --color-wood-dark: #0F0D0C;
+  --color-wood-oak: #C5A059;
+  --color-wood-walnut: #151210;
+  --color-wood-cream: #FDFBF7;
 }
 
 @layer base {
   body {
-    @apply bg-wood-cream text-wood-dark font-sans antialiased;
+    @apply bg-wood-dark text-wood-cream font-sans antialiased;
   }
 
   h1, h2, h3, h4 {
-    @apply font-serif;
+    @apply font-serif text-wood-cream;
   }
 }
 
